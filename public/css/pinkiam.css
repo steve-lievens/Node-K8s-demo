@@ -1,0 +1,153 @@
+.container-fluid {
+  padding-bottom: 3.125rem;
+  height: 100%;
+  width: 105%;
+  overflow-y: scroll; }
+  @media screen and (min-width: 992px) {
+    .container-fluid {
+      width: 100%;
+      overflow-y: hidden; } }
+
+.bx--login-top {
+  color: #fff;
+  height: 50%;
+  background: linear-gradient(to left top, #008571, #3C6DF0, #dc267f);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite; }
+
+.bx--login-title {
+  padding-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1.875rem;
+  margin-top: 2rem; }
+  .bx--login-title h1 {
+    width: 17.5rem;
+    padding-left: 0.25rem; }
+  @media screen and (min-width: 992px) {
+    .bx--login-title {
+      align-content: flex-start;
+      padding-left: 0; } }
+
+.bx--login-invite {
+  padding-top: 1.25rem;
+  padding-left: 1.25rem; }
+
+.bx--link-light {
+  color: #fff; }
+  .bx--link-light:hover, .bx--link-light:focus {
+    text-decoration-color: #fff; }
+  .bx--link-light:visited {
+    color: #fff; }
+
+.bx--login-bottom {
+  padding-top: 1.25rem;
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
+    .bx--login-bottom {
+      min-height: calc(50% - 34px); } }
+
+.bx--login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0; }
+  @media screen and (min-width: 992px) {
+    .bx--login-form {
+      justify-content: flex-start; } }
+
+.bx--login-submit {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+  background-color: transparent;
+  border-color: #3C6DF0;
+  color: #3C6DF0; }
+  .bx--login-submit .bx--login-submit-text.bx--login-loading {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s cubic-bezier(0.34, -0.61, 1, 0.64);
+    transition: opacity 0.35s cubic-bezier(0.34, -0.61, 1, 0.64); }
+  .bx--login-submit.bx--login-loading:before {
+    background: linear-gradient(to right, #40D5BB, #3C6DF0);
+    border-radius: 2rem;
+    content: '';
+    position: absolute;
+    height: calc(100% - 4px);
+    left: 0;
+    will-change: left, right;
+    -webkit-animation: loading_before 3.1s cubic-bezier(0.65, 0.8, 0.7, 0.4) infinite;
+    animation: loading_before 3.1s cubic-bezier(0.65, 0.8, 0.7, 0.4) infinite; }
+  .bx--login-submit.bx--login-loading:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    will-change: left, right;
+    -webkit-animation: loading_short 3.1s cubic-bezier(0.17, 0.8, 0.4, 1) infinite;
+    animation: loading_short 3.1s cubic-bezier(0.17, 0.8, 0.4, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s; }
+
+.bx--form-item {
+  transform: translate(1);
+  -webkit-transition: all 0.35s ease-in 0.01s;
+  transition: all 0.35s ease-in 0.01s;
+  width: 13.75rem; }
+  @media screen and (min-width: 992px) {
+    .bx--form-item {
+      width: 17.5rem;
+      flex: none;
+      margin-right: 0; } }
+  .bx--form-item:last-of-type {
+    margin-right: 0.75rem; }
+    @media screen and (min-width: 992px) {
+      .bx--form-item:last-of-type {
+        margin-right: 0; } }
+
+.bx--login-form-hidden {
+  opacity: 0;
+  height: 0;
+  margin-top: -0.3125rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  transform: translate(1.2); }
+
+.bx--login-finished {
+  background: #1D3458;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.bx--login-success {
+  display: none; }
+
+.bx--login-footer {
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -6.125rem; }
+  @media screen and (min-width: 992px) {
+    .bx--login-footer {
+      justify-content: flex-end;
+      padding-bottom: 1.25rem;
+      padding-right: 1.25rem;
+      margin-right: 0;
+      margin-left: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0; } }
+
+.bx--login-restart {
+  text-align: center; }
+
+.logout-iframe {
+      width:100%;
+      height:800px;
+  }

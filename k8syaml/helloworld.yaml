@@ -1,0 +1,16 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: hello-world
+spec:
+  replicas: 20
+  template:
+    metadata:
+      name: hello-world
+      labels:
+        run: hello-world
+    spec:
+      containers:
+        - name: hello-world
+          image: "de.icr.io/slievens/hello-world:8"
+          imagePullPolicy: Always

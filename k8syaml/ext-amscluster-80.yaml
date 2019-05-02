@@ -1,0 +1,13 @@
+ apiVersion: extensions/v1beta1
+ kind: Ingress
+ metadata:
+   name: ext-amscluster-80
+ spec:
+   rules:
+   - host: amscluster.ams03.containers.appdomain.cloud
+     http:
+       paths:
+       - path: /
+         backend:
+           serviceName: int-http-80
+           servicePort: 80
