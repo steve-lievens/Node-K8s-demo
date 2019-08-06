@@ -63,3 +63,26 @@ app.get('/gethostinfo', function(req, res) {
   console.log("Service gethostname returning " + JSON.stringify(hostobj));
   res.json(hostobj);
 });
+
+// --------------------------------------------------------------------------
+// REST API : get a fibonacci number
+// --------------------------------------------------------------------------
+app.get('/fibo', function(req, res) {
+  var fibo_number = fibo(40);
+
+  var fiboobj = {
+    "fibo": fibo_number
+  }
+
+  res.json(fiboobj);
+});
+
+
+// --------------------------------------------------------------------------
+// Helper : fibonacci : cpu intensive function to create some load
+// --------------------------------------------------------------------------
+function fibo(n) {
+  if (n < 2)
+    return 1;
+  else return fibo(n - 2) + fibo(n - 1);
+}
