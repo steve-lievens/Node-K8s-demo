@@ -31,6 +31,13 @@
 
 				$('#hostname').append(hostname);
 				$('#region').append(region);
+
+				if (region == "FRA") {
+					$('#region-box').addClass("region-fra");
+				}
+				if (region == "AMS") {
+					$('#region-box').addClass("region-ams");
+				}
 			});
 		};
 	</script>
@@ -62,7 +69,7 @@
 				</div>
 			</div>
 			<div class="bx--col-sm-3">
-				<div id="location-fra" class="bx--tile">
+				<div id="region-box" class="bx--tile">
 					<div>Region</div>
 					<div style="min-height:20px"></div>
 					<div id="region"></div>
