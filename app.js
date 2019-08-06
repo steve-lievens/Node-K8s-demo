@@ -37,8 +37,8 @@ app.use(express.static(__dirname + "/public"));
 // Express Server runtime
 // --------------------------------------------------------------------------
 // Start our server !
-app.listen(process.env.PORT || 3000, function() {
-  console.log("INFO: app is listening on port %s", (process.env.PORT || 3000));
+app.listen(process.env.PORT || 8080, function() {
+  console.log("INFO: app is listening on port %s", (process.env.PORT || 8080));
 });
 
 // --------------------------------------------------------------------------
