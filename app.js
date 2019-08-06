@@ -68,7 +68,7 @@ app.get('/gethostinfo', function(req, res) {
 // REST API : get a fibonacci number
 // --------------------------------------------------------------------------
 app.get('/fibo', function(req, res) {
-  var fibo_number = fibo(40);
+  var fibo_number = fibo(30);
 
   var fiboobj = {
     "fibo": fibo_number
