@@ -49,7 +49,7 @@ app.get('/health', function(req, res) {
     "health": "OK"
   }
 
-  res.json(hostobj);
+  res.json(health);
 });
 
 // --------------------------------------------------------------------------
