@@ -22,13 +22,15 @@
 
 		function loadHostname() {
 			// Load the spaces
-			$.getJSON("/gethostname", function(resp) {
+			$.getJSON("/gethostinfo", function(resp) {
 				console.log(resp);
 
 				// Build the space list
 				var hostname = resp.hostname;
+				var region = resp.region;
 
 				$('#hostname').append(hostname);
+				$('#region').append(region);
 			});
 		};
 	</script>
@@ -61,9 +63,9 @@
 			</div>
 			<div class="bx--col-sm-3">
 				<div id="location-fra" class="bx--tile">
-					<div>Location</div>
+					<div>Region</div>
 					<div style="min-height:20px"></div>
-					<div>FRA</div>
+					<div id="region"></div>
 				</div>
 			</div>
 		</div>

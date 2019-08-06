@@ -1,0 +1,13 @@
+ apiVersion: extensions/v1beta1
+ kind: Ingress
+ metadata:
+   name: node-k8s-demo-ibmcloud
+ spec:
+   rules:
+   - host: k8sbelux.eu-de.containers.appdomain.cloud
+     http:
+       paths:
+       - path: /
+         backend:
+           serviceName: node-k8s-demo
+           servicePort: 8080
