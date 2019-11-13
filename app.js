@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 var os = require("os");
 var hostname = os.hostname();
 
-console.log("INFO: starting K8s demo app");
+console.log("INFO: starting Kabanero demo app");
 
 // --------------------------------------------------------------------------
 // Read environment variables
@@ -60,7 +60,7 @@ app.get('/gethostinfo', function(req, res) {
     "hostname": hostname,
     "region": REGION
   }
-  console.log("Service gethostname returning " + JSON.stringify(hostobj));
+  console.log("Service gethostinfo returning " + JSON.stringify(hostobj));
   res.json(hostobj);
 });
 

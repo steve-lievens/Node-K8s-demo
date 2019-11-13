@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world
 spec:
-  replicas: 20
+  replicas: 3
   template:
     metadata:
       name: hello-world
@@ -12,5 +12,8 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: "de.icr.io/slievens/hello-world:8"
+          image: "de.icr.io/slievens/hello-world:10"
+          envFrom:
+          - configMapRef:
+              name: region
           imagePullPolicy: Always
